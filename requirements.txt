@@ -1,0 +1,11 @@
+subprocess
+telnetlib
+datetime
+win32gui
+pyaudio
+android
+twilio
+wave
+json
+time
+sys
