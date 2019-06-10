@@ -1,5 +1,8 @@
 # stupid-scripts
 
+![GitHub](https://img.shields.io/github/license/yunseok/stupid-scripts.svg)
+![Discord](https://img.shields.io/discord/566341020514648076.svg?style=plastic)
+
 My stupid and personal scripts I use almost everyday. I'm using this repository if I add more scripts...
 
 Everything is added as an env on my machines and most them are already executed and I just have to press some buttons on my keyboard to execute them.  
