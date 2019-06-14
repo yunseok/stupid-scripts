@@ -28,3 +28,7 @@ Like most humans, I get thirsty, so I when I execute this script, it calls eithe
 My dad always asks me for help just to switch the window browser to the TV so he can watch stuff on the TV, I made a script to automate it so I don't have to get up and do it manually. 
 
 I taught him the shortcut to do it but he always forget it for some reason...
+
+## SpyOnYourEx
+
+Script to spy on my ex-girlfriend by downloading her stories and her pictures automatically when she submit a new picture to instagram

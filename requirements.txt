@@ -1,6 +1,7 @@
 subprocess
 telnetlib
 datetime
+requests
 win32gui
 pyaudio
 android
