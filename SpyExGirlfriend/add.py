@@ -1,4 +1,4 @@
-from classes.insta import Get, Config, Wanted
+from insta import Get, Config, Wanted
 import sys
 
 def add(user):

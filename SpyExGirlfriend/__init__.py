@@ -1,2 +1,2 @@
-import classes.helper
-import classes.insta
+import helper
+import insta

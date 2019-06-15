@@ -8,7 +8,7 @@ import datetime
 import threading
 import configparser
 from time import sleep
-from classes.helper import url, path
+from helper import url, path
 from queue import Queue
 import urllib.request
 

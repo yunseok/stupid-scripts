@@ -4,7 +4,7 @@ if name == 'nt':
     import ctypes
     kernel32 = ctypes.windll.kernel32
     kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7)
-from classes import insta, helper
+import insta, helper
 from time import sleep
 
 if __name__ == '__main__':
