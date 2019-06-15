@@ -1,7 +1,7 @@
 # stupid-scripts
 
 ![GitHub](https://img.shields.io/github/license/yunseok/stupid-scripts.svg)
-![Discord](https://img.shields.io/discord/566341020514648076.svg?style=plastic)
+![Discord](https://img.shields.io/discord/581070588291055616.svg)
 
 My stupid and personal scripts I use almost everyday. I'm using this repository if I add more scripts...
 
