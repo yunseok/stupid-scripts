@@ -32,3 +32,7 @@ I taught him the shortcut to do it but he always forget it for some reason...
 ## SpyOnYourEx
 
 Script to spy on my ex-girlfriend by downloading her stories and her pictures automatically when she submit a new picture to instagram
+
+## LogRefresher
+
+Just a script that output a text file that keep getting updated frequently in real time, useful for other scripts
