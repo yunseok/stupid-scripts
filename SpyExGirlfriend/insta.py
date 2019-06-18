@@ -53,7 +53,7 @@ class Settings:
 class Config:
     def __init__(self):
         self._lock = threading.Lock()
-        self._config_file_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'config.conf')
+        self._config_file_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), r'C:\Projects\stupid-scripts\SpyExGirlfriend\config.conf')
         self._parser = configparser.ConfigParser()
         self.refresh()
 

@@ -36,3 +36,7 @@ Script to spy on my ex-girlfriend by downloading her stories and her pictures au
 ## LogRefresher
 
 Just a script that output a text file that keep getting updated frequently in real time, useful for other scripts
+
+## SuckOnThisShadow
+
+Scripts for my own "Shadow PC", It's just a remote desktop with the usage of the NVIDIA Shield. The script is just a shortcut to change some mappings that doesn't work such as the Windows Key or Alt+Tab
