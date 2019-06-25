@@ -13,7 +13,7 @@ Funny story, my workplace is far from my home so I sleep in the train, this scri
 
 ## WakeUpAlan
 
-I always forget to take my pills when I wake up, so it just play an audio of my girlfriend that tells me to take my pills when I wake up...
+I always forget to take my pills when I wake up, so it just play an audio of an explosion that tells me to take my pills when I wake up...
 
 ## ScottThots
 

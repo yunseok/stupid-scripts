@@ -6,7 +6,7 @@ import wave
 import time
 
 chunk = 1024
-f = wave.open(r"erin.wav", "rb")
+f = wave.open(r"explosion.wav", "rb")
 p = pyaudio.PyAudio()
 
 stream = p.open(format=p.get_format_from_width(f.getsampwidth()),
