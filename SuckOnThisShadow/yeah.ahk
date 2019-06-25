@@ -1,1 +1,1 @@
-Space & Tab::AltTab
+F3 & F4::AltTab

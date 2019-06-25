@@ -40,3 +40,7 @@ Just a script that output a text file that keep getting updated frequently in re
 ## SuckOnThisShadow
 
 Scripts for my own "Shadow PC", It's just a remote desktop with the usage of the NVIDIA Shield. The script is just a shortcut to change some mappings that doesn't work such as the Windows Key or Alt+Tab
+
+## TinderAutoLike
+
+Simple autolike for tinder in JavaScript, it just clicks on the like button and if it finds a match it also clicks on it. Also works for Bumble, just need to edit the class names
