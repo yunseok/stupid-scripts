@@ -31,7 +31,11 @@ I taught him the shortcut to do it but he always forget it for some reason...
 
 ## SpyOnYourEx
 
-Script to spy on my ex-girlfriend by downloading her stories and her pictures automatically when she submit a new picture to instagram
+Script to spy on my ex-girlfriend by downloading her stories and her pictures automatically and anonymously when she submit a new picture or a new story to instagram, it includes metadata from the profile, pictures, etc...
+
+It watches if my ex did something every 30 minutes or 1 hour, this can be changed depending on the user, I personally use every 12 hours. So if you want to use this you'll need to execute the login script first then the elizabeth script while having a machine open... You can use Heroku or any cloud-based thing to execute this script. I personally use my Shadow PC
+
+Elizabeth, if you're reading this, how the fuck did you find this? Also, call me.
 
 ## LogRefresher
 
