@@ -44,3 +44,7 @@ Scripts for my own "Shadow PC", It's just a remote desktop with the usage of the
 ## TinderAutoLike
 
 Simple autolike for tinder in JavaScript, it just clicks on the like button and if it finds a match it also clicks on it. Also works for Bumble, just need to edit the class names
+
+## GTAVModRemover
+
+Remove mods from the GTA V folder and move it to a backup folder, I made this to play online safely
