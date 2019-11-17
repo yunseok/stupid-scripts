@@ -52,3 +52,7 @@ Simple autolike for tinder in JavaScript, it just clicks on the like button and 
 ## GTAVModRemover
 
 Remove mods from the GTA V folder and move it to a backup folder, I made this to play online safely
+
+## ShadowAntiAFK
+
+Simple script to check if [this](https://i.imgur.com/RqFBN5n.png) is running so I never shut down my Shadow
