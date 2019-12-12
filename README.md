@@ -56,3 +56,11 @@ Remove mods from the GTA V folder and move it to a backup folder, I made this to
 ## ShadowAntiAFK
 
 Simple script to check if [this](https://i.imgur.com/RqFBN5n.png) is running so I never shut down my Shadow
+
+## DelOriginCache
+
+Special script to fix The Sims 4 cracked versions
+
+## flac2mp3
+
+Simple script to convert flac2mp3 while keeping metadata for my phone
