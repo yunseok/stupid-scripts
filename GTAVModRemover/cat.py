@@ -104,3 +104,150 @@ while True:
 			print('GTA V is online')
 			break
 		break
+		
+## TO CONTINUE
+import shutil
+import ctypes
+import sys
+import os
+
+gtaFolderPath = 'C:\\Program Files\\Rockstar Games\\Grand Theft Auto V\\'
+backUpFolderPath = 'C:\\Program Files\\Rockstar Games\\Grand Theft Auto V\\__BACKUP'
+
+gtaFoldersList = [
+	gtaFolderPath + 'update',
+	gtaFolderPath + 'x64',
+]
+
+gtaFilesList = [
+	gtaFolderPath + 'bink2w64.dll',
+	gtaFolderPath + 'common.rpf',
+	gtaFolderPath + 'd3dcompiler_46.dll',
+	gtaFolderPath + 'd3dcsx_46.dll',
+	gtaFolderPath + 'GFSDK_ShadowLib.win64.dll',
+	gtaFolderPath + 'GFSDK_TXAA.win64.dll',
+	gtaFolderPath + 'GFSDK_TXAA_AlphaResolve.win64.dll',
+	gtaFolderPath + 'GPUPerfAPIDX11-x64.dll',
+	gtaFolderPath + 'GTA5.exe',
+	gtaFolderPath + 'GTAVLanguageSelect.exe',
+	gtaFolderPath + 'GTAVLauncher.exe',
+	gtaFolderPath + 'NvPmApi.Core.win64.dll',
+	gtaFolderPath + 'PlayGTAV.exe',
+	gtaFolderPath + 'index.bin',
+	gtaFolderPath + 'version.txt',
+	gtaFolderPath + 'x64a.rpf',
+	gtaFolderPath + 'x64b.rpf',
+	gtaFolderPath + 'x64c.rpf',
+	gtaFolderPath + 'x64d.rpf',
+	gtaFolderPath + 'x64e.rpf',
+	gtaFolderPath + 'x64f.rpf',
+	gtaFolderPath + 'x64g.rpf',
+	gtaFolderPath + 'x64h.rpf',
+	gtaFolderPath + 'x64i.rpf',
+	gtaFolderPath + 'x64j.rpf',
+	gtaFolderPath + 'x64k.rpf',
+	gtaFolderPath + 'x64l.rpf',
+	gtaFolderPath + 'x64m.rpf',
+	gtaFolderPath + 'x64n.rpf',
+	gtaFolderPath + 'x64o.rpf',
+	gtaFolderPath + 'x64p.rpf',
+	gtaFolderPath + 'x64q.rpf',
+	gtaFolderPath + 'x64r.rpf',
+	gtaFolderPath + 'x64s.rpf',
+	gtaFolderPath + 'x64t.rpf',
+	gtaFolderPath + 'x64u.rpf',
+	gtaFolderPath + 'x64v.rpf',
+	gtaFolderPath + 'x64w.rpf'
+]
+
+def clearTerminal():
+	os.system('cls')
+
+def checkGtaVersion(gtaVersionFile):
+	if os.path.exists(backUpFolderPath):
+		f = open('gtaVersionFile', r)
+		fileContent = f.read()
+		print('GTA V - ' + fileContent)
+		f.close()
+		return True
+	else:
+		print('"version.txt" file missing!')
+		return False
+
+def confirmPrompt(question):
+	valid = {
+		"yes": True, 
+		"y": True, 
+		"ye": True,
+		"no": False, 
+		"n": False
+	}
+	
+	if default is None:
+		prompt = " [y/n] "
+	elif default == "yes":
+		prompt = " [Y/n] "
+	elif default == "no":
+		prompt = " [y/N] "
+	else:
+		raise ValueError("invalid default answer: '%s'" % default)
+
+	while True:
+		sys.stdout.write(question + prompt)
+		choice = raw_input().lower()
+		if default is not None and choice == '':
+			return valid[default]
+		elif choice in valid:
+			return valid[choice]
+		else:
+			sys.stdout.write("Please respond with 'yes' or 'no' (or 'y' or 'n').\n")
+
+def moveToBackupFolder(gtaFolderPath, mod, backup):
+	if (os.path.exists(backUpFolderPath)) and (os.path.isdir(backUpFolderPath)):
+		shutil.move(gtaFolderPath + mod, backup)
+		print('Moving "' + mod + '" to the backup folder...')
+	else:
+		if yesNo('The backup folder doesn\'t seem to exists, would like to create one?') == True:
+			shutil.move(gtaFolderPath + mod, backup)
+			print('Moving "' + mod + '" to the backup folder...')
+		else:
+			print('Aborting...')
+			return False
+
+#TODO: CHECK FOR GTA V VERSION
+#TODO: ADD NEW FOLDERS/FILES
+#TODO: IGNORE REDIS/README
+#TODO: COMPRESS IN ZIP FILE
+#TODO: UPLOAD IT IN THE CLOUD
+
+def verifyFiles(gtaFoldersList, gtaFilesList):
+	for folder in gtaFoldersList:
+		if (os.path.exists(folder)) and (os.path.isdir(folder)):
+			print('FOLDERS: OK')
+			for file in gtaFilesList:
+				if (os.path.exists(file)):
+					print('FILES: OK')
+					return True
+				else:
+					print('ERROR! Original files are missing')
+					return False
+					break
+		else:
+			print('ERROR! Original files are missing')
+			return False
+			break
+
+while True:
+	if ctypes.windll.shell32.IsUserAnAdmin() == 0:
+		print('Permission denied! Make sure you are running this application as an administrator.')
+		break
+	else:
+		clearTerminal()
+		print('Checking GTA V Installation...')
+		checkGtaVersion(gtaFolderPath + 'version.txt')
+		if verifyFiles(gtaFoldersList, gtaFilesList) == True:
+			print('Moving mods to the backup folder...')
+			
+			print('GTA V is online')
+			break
+		break
