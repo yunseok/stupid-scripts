@@ -4,6 +4,7 @@ telnetlib
 datetime
 requests
 win32gui
+pyautogui
 pyaudio
 android
 twilio
